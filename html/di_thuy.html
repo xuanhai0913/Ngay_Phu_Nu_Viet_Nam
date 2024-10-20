@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="icon.css">
+    <title>Bà Ngoại</title>
+    <style>
+        h1{
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h3{
+            font-size: 20px;
+            color: rgb(141, 115, 0);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        em{
+            font-size: 15px;
+
+        }
+        #button1 {
+            font-size: small;
+            padding: 10px 20px;
+            background-color: #00a738;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: auto; /* Căn giữa nút */
+        }
+        #button1:hover {
+            background-color: #318b4f; /* Hiệu ứng hover */
+        }
+        div{
+            color: #565c00;
+        }
+    </style>
+</head>
+<body>
+<button>
+  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+  <span>      <a href="/./index.html">Quay lại</a>
+  </span>
+</button>
+    <h1>Dì Sáu [ Vua đầu bếp ]</h1>
+    <p>Dì sáu 21/10 vui vẻ cùng Dượng Phú , Su và Ben nha, có gia đình là có tất cả 😍</p><br>
+    <h3>Dì sáu lo lắng cho sức khỏe bản thân nha 😋</h3>
+    <h3>Ngày nào cũng bán được 50 〰 1000 ổ bánh mì nha 🌭🍔🍞🥖</h3> <em>Sức khỏe là sức mạnh của phụ nữ</em>
+
+    <h3>Số Bánh Mì bán được ngày hôm nay :</h3>
+    <button id="button1" onclick="generateRandomNumber()" >Số bánh mì bán được</button> <br>
+    <div class="number" id="randomNumber"></div>
+
+    <script>
+        function generateRandomNumber() {
+            const min = 100;
+            const max = 1000;
+            const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            document.getElementById('randomNumber').textContent = `Bánh mì bán được: ${randomNumber}`;
+        }
+    </script>    <br>
+
+    <img src="/img/ThanhThuy.png" alt="Dì Thúy" style="width: 400px; height: auto;">
+    <br>
+</body>
+</html>
