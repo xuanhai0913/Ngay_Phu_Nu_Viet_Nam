@@ -8,7 +8,10 @@ body {
 h1 {
     color: #e91e63;
 }
+.circle {
+  border-radius: 20px; /* Bo góc nhẹ */
 
+}
 .container {
     margin-top: 50px;
 }
